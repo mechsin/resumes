@@ -6,6 +6,7 @@
 
 \documentclass[a4paper,10pt]{article}
 \usepackage[vmargin=1.5cm, hmargin=1.5cm]{geometry}
+\usepackage{enumitem}
 \input{mysetup}
 %-------------------------------------------------------------------------------------------------------
 
@@ -21,7 +22,7 @@
 % Please add a photo in 1x1 format
 \begin{center}
 \begin{tikzpicture}
-	\clip (0,0) circle (2cm) node {\includegraphics[width=4cm]{programming_languages}};
+	\clip (0,0) circle (2cm) node {\includegraphics[width=4cm]{programming_languages_v3}};
 \end{tikzpicture}
 
 \MySkip 	% See MySetup.tex file
@@ -31,24 +32,29 @@
 
 \MySkip 	% See MySetup.tex file
 
+\textcolor{ColorTwo}{\faHome}
+\textcolor{ColorTwo}{Baltimore, MD -- USA}\\
+%Currently living in Another City\\
+
 \textcolor{ColorTwo}{\faEnvelopeO}
 \myhref{mailto:menyland@gmail.com}{menyland@gmail.com} \\
 
+\textcolor{ColorTwo}{\faGithub} \myhref{https://github.com/mechsin}{mechsin}\\
+
 \textcolor{ColorTwo}{\faChain}
-\myhref{https://sites.google.com/view/christopher-nyland/home}{Portfolio} \\
-%{\fontsize{https://sites.google.com/view/christopher-nyland/home}{3.6pt}\selectfont 3pt}
-\textcolor{ColorTwo}{\fontsize{3 pt}{3.6pt}\selectfont https://sites.google.com/view/christopher-nyland/home}
+\myhref{https://sites.google.com/view/christopher-nyland/home}{Portfolio: {\fontsize{8 pt}{3.6pt}\selectfont https://bit.ly/3c4yKyY}} \\
 \end{center}
 
 \vfill
 
 %----------------------------------------------------
-\section*{Scientific interests}
+\section*{Interests}
 \raggedright
-\textcolor{ColorOne}{$\circ$} Something interesting\\
-\textcolor{ColorOne}{$\circ$} Another interesting thing\\
-\textcolor{ColorOne}{$\circ$} The most interesting thing\\
-\textcolor{ColorOne}{$\circ$} Something less interesting
+\textcolor{ColorOne}{$\circ$} Automation\\
+\textcolor{ColorOne}{$\circ$} Building Tools and Standardization\\
+\textcolor{ColorOne}{$\circ$} The intersection of hardware and software\\
+\textcolor{ColorOne}{$\circ$} Modular design\\
+\textcolor{ColorOne}{$\circ$} Making the world a better place\\
 
 \vfill
 
@@ -82,65 +88,86 @@
 %-------------------------------------------------------------------------------------------------------
 \begin{adjustbox}{valign=t}
 \begin{minipage}{0.6\textwidth} % Adapt width to your convienience
-\section*{Current situation}
+
+\section*{About Me}
+
+	\raggedright
+	Senior level engineer with 10+ years experience in Python building tools, manipulating data, and general purpose programming. I've worked in cubicles, labs, shops, and actual fields. I can make technology work in any location.
+%I am a senior level engineer with hands on experience in instrumentation and data collection as well as data analysis and visualization.
+\section*{Current Position}
 \begin{description}
 \raggedright
 \item[\normalfont \textcolor{ColorOne}{Sep. 2016 - Present}] \textbf{Computer Scientist - US Army Civilian}\\ \medskip
-\begin{itemize}
-	\item Expert in digital data collection and processing
-	\item Development of hardware systems and solutions
-	\item Development of software anaylisis and visualization tools
+\begin{itemize}[align=right, itemindent=-1.5em,leftmargin=0pt]
+	\item Promoted to Army-wide technical expert for logistics architecture
+	\item Lead architect for new logistics capabilites
+	\item Standards data manager for key Army logistics standards
+	\item Developer of hardware systems and solutions
+	\item Developer of software anaylisis and visualization tools
 \end{itemize}
 \end{description}
 
 %----------------------------------------------------
-\section*{Experience}
+\section*{Work Experience}
 \begin{description}
 \raggedright
 \item[\normalfont \textcolor{ColorOne}{Feb. 2014 - Sep. 2016}] \textbf{Software Engineer III - HBM nCode} \\ \medskip
 
-\begin{itemize}
+\begin{itemize}[align=right, itemindent=-1.5em,leftmargin=0pt]
 	\item Design, wrote, maintained server side data processing software
-	\item Developed requirements for multiple embedded data collectors
+	\item Developed requirements for embedded data collectors
 	\item Developed process to work with large datasets to avoid memory and I/O issues
 \end{itemize}
 
 
 \item[\normalfont \textcolor{ColorOne}{Sep 2007 - Feb. 2014}] \textbf{Engineer III - Jacobs Technologies}
-	\begin{itemize}
-		\item Completed hundreds of test on vehicles and other military systems
+	\begin{itemize}[align=right, itemindent=-1.5em,leftmargin=0pt]
+		\item Completed hundreds of tests on military vehicles and systems in lab and field environments
 		\item Planned and installed instrumentation packages
 		\item Develop tools and GUIs to simplify data collection and analysis for entire organization
 	\end{itemize}
-\end{description}
-
-\section*{Another section}
-\begin{description}
-	\raggedright
-	\item Something you want to include in your CV
 \end{description}
 
 \MySkip
 %----------------------------------------------------
 
 \begin{multicols}{2}
-
-\section*{Programming Languages}
-\begin{tabular}{ll}
+	\section*{Prog. Languages}
+	\begin{tabular}{ll}
 	Python  			& \SkillBull{$\bullet \bullet \bullet$}\\
 	Matlab 		& \SkillBull{$\bullet \bullet \circ$}\\
 	C\textbackslash C++        &\SkillBull{$\bullet \bullet \circ$}\\
 	Javascript  &\SkillBull{$\bullet \circ \circ$}\\
-\end{tabular}
+	\end{tabular}
 
-\vfill\null \columnbreak  % Break column for new section
+	\vfill\null \columnbreak  % Break column for new section
 
-\section*{Languages}
-\begin{tabular}{ll}
-	Spanish 		& \SkillBull{$\bullet \bullet \bullet \, \circ$}\\
-	French 		& \SkillBull{$\bullet \circ \circ \, \circ$}\\
-\end{tabular}
+	\section*{Hobbies}
+
+	\begin{itemize}[noitemsep]
+		\item Rock Climbing
+		\item 3D Printing
+		\item Small electronics
+\end{itemize}
 \end{multicols}
+
+
+%\begin{multicols}{2}
+%
+%\section*{Programming Languages}
+%\begin{tabular}{ll}
+%	Python  			& \SkillBull{$\bullet \bullet \bullet$}\\
+%	Matlab 		& \SkillBull{$\bullet \bullet \circ$}\\
+%	C\textbackslash C++        &\SkillBull{$\bullet \bullet \circ$}\\
+%	Javascript  &\SkillBull{$\bullet \circ \circ$}\\
+%\end{tabular}
+%
+%\vfill\null \columnbreak  % Break column for new section
+%
+%\section*{Hobbies}
+%
+%
+%\end{multicols}
 %----------------------------------------------------
 \LastUpdate
 %----------------------------------------------------
